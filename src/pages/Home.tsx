@@ -25,7 +25,9 @@ function Home() {
               <td>{user.name}</td>
               <td>{user.email}</td>
               <td>
-                <button className="btn btn-sm btn-primary">Edit</button>
+                <Link to={`/edit/${user.id}`}>
+                  <button className="btn btn-sm btn-primary">Edit</button>
+                </Link>
                 <button className="btn btn-sm btn-danger ms-2">Delete</button>
               </td>
             </tr>
